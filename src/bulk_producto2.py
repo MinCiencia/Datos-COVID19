@@ -37,5 +37,5 @@ df["Casos Confirmados"] = df["Casos Confirmados"].fillna("-")
 df["Tasa"] = df.apply(lambda x: (100000 * int(x["Casos Confirmados"]) / x["Poblacion"]) if x["Casos Confirmados"] != "-" else "-", axis=1) 
 
 # Crea output de datos en CSV / JSON
-df.to_csv("../output/producto2/bulk/data.csv", index=False)
-df.to_json("../output/producto2/bulk/data.json", orient="records")
+df.to_csv("../output/producto6/bulk/producto2.csv", index=False)
+df.to_json("../output/producto6/bulk/producto2.json", orient="records")
