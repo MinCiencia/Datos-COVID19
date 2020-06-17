@@ -1,23 +1,23 @@
-Comorbilidad,Hospitalización,2020-05-25,2020-05-29,2020-06-01,2020-06-05,2020-06-08,2020-06-12
-Hipertensión arterial,NO,6350.0,8134.0,9725.0,11543.0,13491.0,16083
-Diabetes,NO,2770.0,3569.0,4333.0,5043.0,5982.0,7024
-Obesidad,NO,1351.0,1743.0,2118.0,2578.0,3055.0,3639
-Enfermedad cardiovascular,NO,540.0,664.0,770.0,784.0,891.0,1041
-Cardiopatía crónica,NO,405.0,498.0,578.0,672.0,764.0,802
-Enfermedad pulmonar crónica,NO,405.0,415.0,578.0,672.0,764.0,828
-Enfermedad renal crónica,NO,203.0,332.0,385.0,448.0,509.0,632
-Asma,NO,1554.0,1909.0,2311.0,2690.0,3055.0,3582
-Enfermedad neurológica crónica,NO,203.0,249.0,289.0,336.0,382.0,430
-Inmunocomprometido,NO,68.0,83.0,96.0,112.0,127.0,145
-Enfermedad hepática crónica,NO,68.0,83.0,96.0,112.0,127.0,103
-Hipertensión arterial,SI,1861.0,2192.0,2556.0,3025.0,3461.0,4147
-Diabetes,SI,1262.0,1467.0,1695.0,1972.0,2234.0,2615
-Obesidad,SI,380.0,466.0,541.0,647.0,729.0,858
-Enfermedad cardiovascular,SI,296.0,328.0,373.0,417.0,463.0,580
-Cardiopatía crónica,SI,328.0,367.0,408.0,459.0,509.0,557
-Enfermedad pulmonar crónica,SI,309.0,344.0,391.0,459.0,498.0,582
-Enfermedad renal crónica,SI,283.0,336.0,382.0,449.0,498.0,446
-Asma,SI,232.0,252.0,293.0,344.0,382.0,594
-Enfermedad neurológica crónica,SI,193.0,214.0,240.0,271.0,301.0,367
-Inmunocomprometido,SI,84.0,99.0,106.0,115.0,127.0,154
-Enfermedad hepática crónica,SI,71.0,92.0,106.0,115.0,127.0,155
+Comorbilidad,Hospitalización,2020-05-25,2020-05-29,2020-06-01,2020-06-05,2020-06-08,2020-06-12,2020-06-15
+Hipertensión arterial,NO,6350.0,8134.0,9725.0,11543.0,13491.0,16083,18328
+Diabetes,NO,2770.0,3569.0,4333.0,5043.0,5982.0,7024,8015
+Obesidad,NO,1351.0,1743.0,2118.0,2578.0,3055.0,3639,4199
+Enfermedad cardiovascular,NO,540.0,664.0,770.0,784.0,891.0,1041,1134
+Cardiopatía crónica,NO,405.0,498.0,578.0,672.0,764.0,802,878
+Enfermedad pulmonar crónica,NO,405.0,415.0,578.0,672.0,764.0,828,925
+Enfermedad renal crónica,NO,203.0,332.0,385.0,448.0,509.0,632,737
+Asma,NO,1554.0,1909.0,2311.0,2690.0,3055.0,3582,4010
+Enfermedad neurológica crónica,NO,203.0,249.0,289.0,336.0,382.0,430,493
+Inmunocomprometido,NO,68.0,83.0,96.0,112.0,127.0,145,106
+Enfermedad hepática crónica,NO,68.0,83.0,96.0,112.0,127.0,103,123
+Hipertensión arterial,SI,1861.0,2192.0,2556.0,3025.0,3461.0,4147,4641
+Diabetes,SI,1262.0,1467.0,1695.0,1972.0,2234.0,2615,2935
+Obesidad,SI,380.0,466.0,541.0,647.0,729.0,858,989
+Enfermedad cardiovascular,SI,296.0,328.0,373.0,417.0,463.0,580,643
+Cardiopatía crónica,SI,328.0,367.0,408.0,459.0,509.0,557,611
+Enfermedad pulmonar crónica,SI,309.0,344.0,391.0,459.0,498.0,582,631
+Enfermedad renal crónica,SI,283.0,336.0,382.0,449.0,498.0,446,488
+Asma,SI,232.0,252.0,293.0,344.0,382.0,594,645
+Enfermedad neurológica crónica,SI,193.0,214.0,240.0,271.0,301.0,367,394
+Inmunocomprometido,SI,84.0,99.0,106.0,115.0,127.0,154,160
+Enfermedad hepática crónica,SI,71.0,92.0,106.0,115.0,127.0,155,148
