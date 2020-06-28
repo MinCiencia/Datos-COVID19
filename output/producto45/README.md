@@ -3,7 +3,7 @@ Archivo que da cuenta de los casos probables, no notificados y confirmados notif
 
 Se entiende por caso probables la persona que cumple los criterios de definición de caso sospechoso con una muestra "indeterminada" a SARS-CoV-2 o bien personas en contacto estrecho con un caso confirmado que desarrollan al menos un síntoma compatible con COVID-19. Para efectos epidemiológicos, los casos probables se considerarán casos confirmados y por ende serán contabilizados dentro de los casos totales. 
 
-Se entiende por caso no notificado la persona que cumple los criterios de de definición de casos sospechoso, probable o confirmado y no está registrada en la plataforma EPIVIGILA.
+Se entiende por caso <<no notificado>> el caso que tiene un examen PCR positivo para SARS-CoV-2 y no está registrado en la plataforma EPIVIGILA, es decir, no ha sido notificado a la autoridad sanitaria.
 
 Se entiende por caso confirmado la persona notificada que cumple con los criterios de definición de caso sospechoso o probable con una muestra positiva de SARS-CoV-2, o bien persona no notificada con un registro de resultado de laboratorio positiva a SARS-CoV-2.
 
