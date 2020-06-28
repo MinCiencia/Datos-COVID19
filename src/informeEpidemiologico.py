@@ -394,65 +394,30 @@ def prod39(fte, producto):
     df_std.to_csv(producto + '_std.csv', index=False)
 
 
-def prod45(fte, name, prod):
-    data = []
-    i = 0
-    for file in glob.glob(fte + '*-Casos'+ name + '.csv'):
-        print(file)
-        if file != fte + 'Casos'+ name + '.csv': 
-          print(file)
-          date = re.search("\d{4}-\d{2}-\d{2}", file).group(0)
-          df = pd.read_csv(file, sep=",", encoding="utf-8", dtype={'Codigo region': object, 'Codigo comuna': object})
-          df.dropna(how='all', inplace=True)
-          # Drop filas de totales por region
-          todrop = df.loc[df['Comuna'] == 'Total']
-          df.drop(todrop.index, inplace=True)
-          # Hay semanas epi que se llam S en vez de SE
-          for eachColumn in list(df):
-            if re.search("S\d{2}", eachColumn):
-                print("Bad name " + eachColumn)
-                df.rename(columns={eachColumn: eachColumn.replace('S', 'SE')}, inplace=True)
-          # insert publicacion as column 5
-          #df['Publicacion'] = date
-          df.insert(loc=5, column='Publicacion', value=date)
-          data.append(df)
-          i += 1
+def prod45(fte, name, producto):
+
+    fte = fte + name + 'PorComuna.csv'
+    df = pd.read_csv(fte, dtype={'Codigo region': object, 'Codigo comuna': object})
+    df.dropna(how='all', inplace=True)
+    utils.regionName(df)
+    # Drop filas de totales por region
+    todrop = df.loc[df['Comuna'] == 'Total']
+    df.drop(todrop.index, inplace=True)
+    df.to_csv(producto + '.csv', index=False)
+    df_t = df.T
+    df_t.to_csv(producto + '_T.csv', header=False)
+    copyfile('../input/InformeEpidemiologico/SemanasEpidemiologicas.csv', '../output/producto45/SemanasEpidemiologicas.csv')
+    identifiers = ['Region', 'Codigo region', 'Comuna', 'Codigo comuna', 'Poblacion']
+    variables = [x for x in df.columns if x not in identifiers]
 
     name.lower()
+
     if name == 'nonotificados':
         name = 'no notificados'
-    #normalization
-    if i > 0:
-        data = pd.concat(data)
-        data = data.fillna(0)
-        utils.regionName(data)
-        data.sort_values(['Publicacion','Region'], ascending=[True, True], inplace=True )
-        data.to_csv(prod + '.csv', index=False)
-        identifiers = ['Region', 'Codigo region', 'Comuna', 'Codigo comuna', 'Poblacion', 'Publicacion']
-        variables = [x for x in data.columns if x not in identifiers]
-        df_std = pd.melt(data, id_vars=identifiers, value_vars=variables, var_name='Semana Epidemiologica',
-                         value_name='Casos ' + name)
-        df_std.to_csv(prod + '_std.csv', index=False)
+    
+    df_std = pd.melt(df, id_vars=identifiers, value_vars=variables, var_name='Semana Epidemiologica', value_name='Casos ' + name)
 
-    #create a file like the old prod 15 from latest adition
-    if i > 0:
-        latest = max(data['Publicacion'])
-    else:
-        latest = date
-        print(latest)
-        latestdf =data.loc[data['Publicacion'] == latest]
-        print(latestdf)
-        latestdf.drop(['Publicacion'], axis=1, inplace=True)
-        latestdf.to_csv(prod.replace('Historico', '.csv'), index=False)
-
-        df_t = latestdf.T
-        df_t.to_csv(prod.replace('Historico', '_T.csv'), header=False)
-
-        identifiers = ['Region', 'Codigo region', 'Comuna', 'Codigo comuna', 'Poblacion']
-        variables = [x for x in latestdf.columns if x not in identifiers]
-        df_std = pd.melt(latestdf, id_vars=identifiers, value_vars=variables, var_name='Semana Epidemiologica',
-                     value_name='Casos ' + name)
-        df_std.to_csv(prod.replace('Historico', '_std.csv'), index=False)
+    df_std.to_csv(producto + '_std.csv', index=False)
 
 
 
@@ -501,6 +466,6 @@ if __name__ == '__main__':
     prod39('../input/InformeEpidemiologico/NotificacionInicioSintomas.csv', '../output/producto39/NotificacionInicioSintomas')
 
     print('Generando producto 45')
-    prod45('../input/InformeEpidemiologico/', 'Confirmados','../output/producto45/CasosConfirmados')
-    prod45('../input/InformeEpidemiologico/', 'NoNotificados','../output/producto45/CasosNoNotificados')
-    prod45('../input/InformeEpidemiologico/', 'Probables','../output/producto45/CasosProbables')
+    prod45('../input/InformeEpidemiologico/2020-06-26-Casos', 'Confirmados','../output/producto45/CasosConfirmadosPorComuna')
+    prod45('../input/InformeEpidemiologico/2020-06-26-Casos', 'NoNotificados','../output/producto45/CasosNoNotificadosPorComuna')
+    prod45('../input/InformeEpidemiologico/2020-06-26-Casos', 'Probables','../output/producto45/CasosProbablesPorComuna')
