@@ -1,5 +1,5 @@
-# DP1 - Casos Probables, No Notificados y Confirmados por FIS por comuna: Descripción
-Archivo que da cuenta de los casos probables, no notificados y confirmados notificados en cada una de las comunas de Chile, según residencia.
+# DP45 - Casos Probables, No Notificados y Confirmados por FIS por comuna: Descripción
+Archivo que da cuenta de los casos probables, no notificados y confirmados notificados en cada una de las comunas de Chile, según residencia y fecha de inicio de síntomas.
 
 Se entiende por caso probables la persona que cumple los criterios de definición de caso sospechoso con una muestra "indeterminada" a SARS-CoV-2 o bien personas en contacto estrecho con un caso confirmado que desarrollan al menos un síntoma compatible con COVID-19. Para efectos epidemiológicos, los casos probables se considerarán casos confirmados y por ende serán contabilizados dentro de los casos totales. 
 
