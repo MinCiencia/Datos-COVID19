@@ -39,6 +39,9 @@ Los productos que salen del informe epidemiologico son:
 35
 38
 39
+45
+46
+47
 """
 
 import utils
@@ -391,6 +394,68 @@ def prod39(fte, producto):
     df_std.to_csv(producto + '_std.csv', index=False)
 
 
+def prod45(fte, name, prod):
+    data = []
+    i = 0
+    for file in glob.glob(fte + '*-Casos'+ name + '.csv'):
+        print(file)
+        if file != fte + 'Casos'+ name + '.csv': 
+          print(file)
+          date = re.search("\d{4}-\d{2}-\d{2}", file).group(0)
+          df = pd.read_csv(file, sep=",", encoding="utf-8", dtype={'Codigo region': object, 'Codigo comuna': object})
+          df.dropna(how='all', inplace=True)
+          # Drop filas de totales por region
+          todrop = df.loc[df['Comuna'] == 'Total']
+          df.drop(todrop.index, inplace=True)
+          # Hay semanas epi que se llam S en vez de SE
+          for eachColumn in list(df):
+            if re.search("S\d{2}", eachColumn):
+                print("Bad name " + eachColumn)
+                df.rename(columns={eachColumn: eachColumn.replace('S', 'SE')}, inplace=True)
+          # insert publicacion as column 5
+          #df['Publicacion'] = date
+          df.insert(loc=5, column='Publicacion', value=date)
+          data.append(df)
+          i += 1
+
+    name.lower()
+    if name == 'nonotificados':
+        name = 'no notificados'
+    #normalization
+    if i > 0:
+        data = pd.concat(data)
+        data = data.fillna(0)
+        utils.regionName(data)
+        data.sort_values(['Publicacion','Region'], ascending=[True, True], inplace=True )
+        data.to_csv(prod + '.csv', index=False)
+        identifiers = ['Region', 'Codigo region', 'Comuna', 'Codigo comuna', 'Poblacion', 'Publicacion']
+        variables = [x for x in data.columns if x not in identifiers]
+        df_std = pd.melt(data, id_vars=identifiers, value_vars=variables, var_name='Semana Epidemiologica',
+                         value_name='Casos ' + name)
+        df_std.to_csv(prod + '_std.csv', index=False)
+
+    #create a file like the old prod 15 from latest adition
+    if i > 0:
+        latest = max(data['Publicacion'])
+    else:
+        latest = date
+        print(latest)
+        latestdf =data.loc[data['Publicacion'] == latest]
+        print(latestdf)
+        latestdf.drop(['Publicacion'], axis=1, inplace=True)
+        latestdf.to_csv(prod.replace('Historico', '.csv'), index=False)
+
+        df_t = latestdf.T
+        df_t.to_csv(prod.replace('Historico', '_T.csv'), header=False)
+
+        identifiers = ['Region', 'Codigo region', 'Comuna', 'Codigo comuna', 'Poblacion']
+        variables = [x for x in latestdf.columns if x not in identifiers]
+        df_std = pd.melt(latestdf, id_vars=identifiers, value_vars=variables, var_name='Semana Epidemiologica',
+                     value_name='Casos ' + name)
+        df_std.to_csv(prod.replace('Historico', '_std.csv'), index=False)
+
+
+
 if __name__ == '__main__':
 
     prod1('../input/InformeEpidemiologico/CasosAcumuladosPorComuna.csv', '../output/producto1/Covid-19')
@@ -434,3 +499,8 @@ if __name__ == '__main__':
 
     print('Generando producto 39')
     prod39('../input/InformeEpidemiologico/NotificacionInicioSintomas.csv', '../output/producto39/NotificacionInicioSintomas')
+
+    print('Generando producto 45')
+    prod45('../input/InformeEpidemiologico/', 'Confirmados','../output/producto45/CasosConfirmados')
+    prod45('../input/InformeEpidemiologico/', 'NoNotificados','../output/producto45/CasosNoNotificados')
+    prod45('../input/InformeEpidemiologico/', 'Probables','../output/producto45/CasosProbables')
