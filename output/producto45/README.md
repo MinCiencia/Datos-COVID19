@@ -1,12 +1,16 @@
-# DP1 - Casos totales por comuna incremental: Descripción
-Archivo que da cuenta de los casos confirmados notificados en cada una de las comunas de Chile, según residencia, y concatena la historia de los informes epidemiológicos publicados por el Ministerio de Salud del país.
+# DP1 - Casos Probables, No Notificados y Confirmados por FIS por comuna: Descripción
+Archivo que da cuenta de los casos probables, no notificados y confirmados notificados en cada una de las comunas de Chile, según residencia.
 
-Se entiende por caso confirmado la persona que cumple con los criterios de definición de caso sospechoso con una muestra positiva de SARS-CoV-2.
+Se entiende por caso probables la persona que cumple los criterios de definición de caso sospechoso con una muestra "indeterminada" a SARS-CoV-2 o bien personas en contacto estrecho con un caso confirmado que desarrollan al menos un síntoma compatible con COVID-19. Para efectos epidemiológicos, los casos probables se considerarán casos confirmados y por ende serán contabilizados dentro de los casos totales. 
+
+Se entiende por caso no notificado la persona que cumple los criterios de de definición de casos sospechoso, probable o confirmado y no está registrada en la plataforma EPIVIGILA.
+
+Se entiende por caso confirmado la persona notificada que cumple con los criterios de definición de caso sospechoso o probable con una muestra positiva de SARS-CoV-2, o bien persona no notificada con un registro de resultado de laboratorio positiva a SARS-CoV-2.
 
 Se entiende por comuna de residencia la comuna que la persona declara como su vivienda habitual. 
 
 # Columnas y valores
-El archivo Covid-19.csv contiene las columnas 'Región', ‘Código Región’, 'Comuna', ‘Código comuna’, 'Población', múltiples columnas correspondientes a '[fecha]', y una columna 'Tasa'. Estas últimas columnas, ‘[fecha]’, contienen los 'Casos Confirmados' reportados por el Ministerio de Salud de Chile en cada una de las fechas que se indican en las respectivas columnas. La columna 'Tasa' contiene el número de casos confirmados por cada 100 mil habitantes de una población. El archivo Covid-19_T.csv es la versión traspuesta (serie de tiempo) del primer archivo. Todos estos valores están separados entre sí por comas (csv).
+El archivo CasosProbablePorComuna.csv contiene las columnas 'Región', ‘Código Región’, 'Comuna', ‘Código comuna’, 'Población', múltiples columnas correspondientes a '[fecha]'. Estas últimas columnas, ‘[fecha]’, contienen los 'Casos Confirmados' reportados por el Ministerio de Salud de Chile en cada una de las fechas que se indican en las respectivas columnas. La columna 'Tasa' contiene el número de casos confirmados por cada 100 mil habitantes de una población. El archivo Covid-19_T.csv es la versión traspuesta (serie de tiempo) del primer archivo. Todos estos valores están separados entre sí por comas (csv).
 
 # Fuente
 Informes epidemiológicos publicados periódicamente por el Ministerio de Salud de Chile. Ver en:
