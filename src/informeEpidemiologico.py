@@ -410,7 +410,7 @@ def prod45(fte, name, producto):
     identifiers = ['Region', 'Codigo region', 'Comuna', 'Codigo comuna', 'Poblacion']
     variables = [x for x in df.columns if x not in identifiers]
 
-    name.lower()
+    name = name.lower()
 
     if name == 'nonotificados':
         name = 'no notificados'
