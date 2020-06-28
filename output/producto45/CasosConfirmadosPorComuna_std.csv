@@ -1587,7 +1587,7 @@ Metropolitana,13.0,Santiago,13101.0,503147.0,SE11,29.0
 Metropolitana,13.0,Talagante,13601.0,81838.0,SE11,0.0
 Metropolitana,13.0,Tiltil,13303.0,21477.0,SE11,0.0
 Metropolitana,13.0,Vitacura,13132.0,96774.0,SE11,32.0
-Metropolitana,13.0,Desconocido Metropolitana,,,SE11,0.0
+Metropolitana,13.0,Desconocido Metropolitana,,,SE11,3.0
 O’Higgins,6.0,Chepica,6302.0,15925.0,SE11,0.0
 O’Higgins,6.0,Chimbarongo,6303.0,37696.0,SE11,0.0
 O’Higgins,6.0,Codegua,6102.0,14096.0,SE11,0.0
@@ -1785,7 +1785,7 @@ Los Lagos,10.0,Quinchao,10210.0,8298.0,SE11,0.0
 Los Lagos,10.0,Rio Negro,10305.0,14275.0,SE11,0.0
 Los Lagos,10.0,San Juan de la Costa,10306.0,7639.0,SE11,0.0
 Los Lagos,10.0,San Pablo,10307.0,10553.0,SE11,0.0
-Los Lagos,10.0,Desconocido Los Lagos,,,SE11,0.0
+Los Lagos,10.0,Desconocido Los Lagos,,,SE11,9.0
 Aysén,11.0,Aysen,11201.0,25002.0,SE11,1.0
 Aysén,11.0,Chile Chico,11401.0,5121.0,SE11,0.0
 Aysén,11.0,Cisnes,11202.0,5828.0,SE11,0.0
@@ -1796,7 +1796,7 @@ Aysén,11.0,Lago Verde,11102.0,920.0,SE11,0.0
 Aysén,11.0,OHiggins,11302.0,661.0,SE11,0.0
 Aysén,11.0,Rio Ibanez,11402.0,2699.0,SE11,0.0
 Aysén,11.0,Tortel,11303.0,572.0,SE11,0.0
-Aysén,11.0,Desconocido Aysen,,,SE11,0.0
+Aysén,11.0,Desconocido Aysen,,,SE11,1.0
 Magallanes,12.0,Antartica,12202.0,137.0,SE11,0.0
 Magallanes,12.0,Cabo de Hornos,12201.0,1983.0,SE11,2.0
 Magallanes,12.0,Laguna Blanca,12102.0,264.0,SE11,0.0
@@ -1949,7 +1949,7 @@ Metropolitana,13.0,Santiago,13101.0,503147.0,SE12,100.0
 Metropolitana,13.0,Talagante,13601.0,81838.0,SE12,4.0
 Metropolitana,13.0,Tiltil,13303.0,21477.0,SE12,2.0
 Metropolitana,13.0,Vitacura,13132.0,96774.0,SE12,49.0
-Metropolitana,13.0,Desconocido Metropolitana,,,SE12,0.0
+Metropolitana,13.0,Desconocido Metropolitana,,,SE12,4.0
 O’Higgins,6.0,Chepica,6302.0,15925.0,SE12,0.0
 O’Higgins,6.0,Chimbarongo,6303.0,37696.0,SE12,2.0
 O’Higgins,6.0,Codegua,6102.0,14096.0,SE12,1.0
@@ -2147,7 +2147,7 @@ Los Lagos,10.0,Quinchao,10210.0,8298.0,SE12,0.0
 Los Lagos,10.0,Rio Negro,10305.0,14275.0,SE12,0.0
 Los Lagos,10.0,San Juan de la Costa,10306.0,7639.0,SE12,0.0
 Los Lagos,10.0,San Pablo,10307.0,10553.0,SE12,0.0
-Los Lagos,10.0,Desconocido Los Lagos,,,SE12,0.0
+Los Lagos,10.0,Desconocido Los Lagos,,,SE12,10.0
 Aysén,11.0,Aysen,11201.0,25002.0,SE12,0.0
 Aysén,11.0,Chile Chico,11401.0,5121.0,SE12,0.0
 Aysén,11.0,Cisnes,11202.0,5828.0,SE12,0.0
@@ -2258,7 +2258,7 @@ Valparaíso,5.0,Valparaiso,5101.0,315732.0,SE13,16.0
 Valparaíso,5.0,Villa Alemana,5804.0,139310.0,SE13,4.0
 Valparaíso,5.0,Vina del Mar,5109.0,361371.0,SE13,28.0
 Valparaíso,5.0,Zapallar,5405.0,7994.0,SE13,0.0
-Valparaíso,5.0,Desconocido Valparaiso,,,SE13,0.0
+Valparaíso,5.0,Desconocido Valparaiso,,,SE13,1.0
 Metropolitana,13.0,Alhue,13502.0,7405.0,SE13,0.0
 Metropolitana,13.0,Buin,13402.0,109641.0,SE13,17.0
 Metropolitana,13.0,Calera de Tango,13403.0,28525.0,SE13,4.0
@@ -2509,7 +2509,7 @@ Los Lagos,10.0,Quinchao,10210.0,8298.0,SE13,1.0
 Los Lagos,10.0,Rio Negro,10305.0,14275.0,SE13,2.0
 Los Lagos,10.0,San Juan de la Costa,10306.0,7639.0,SE13,1.0
 Los Lagos,10.0,San Pablo,10307.0,10553.0,SE13,2.0
-Los Lagos,10.0,Desconocido Los Lagos,,,SE13,0.0
+Los Lagos,10.0,Desconocido Los Lagos,,,SE13,1.0
 Aysén,11.0,Aysen,11201.0,25002.0,SE13,0.0
 Aysén,11.0,Chile Chico,11401.0,5121.0,SE13,0.0
 Aysén,11.0,Cisnes,11202.0,5828.0,SE13,0.0
@@ -2871,7 +2871,7 @@ Los Lagos,10.0,Quinchao,10210.0,8298.0,SE14,0.0
 Los Lagos,10.0,Rio Negro,10305.0,14275.0,SE14,3.0
 Los Lagos,10.0,San Juan de la Costa,10306.0,7639.0,SE14,10.0
 Los Lagos,10.0,San Pablo,10307.0,10553.0,SE14,4.0
-Los Lagos,10.0,Desconocido Los Lagos,,,SE14,0.0
+Los Lagos,10.0,Desconocido Los Lagos,,,SE14,1.0
 Aysén,11.0,Aysen,11201.0,25002.0,SE14,0.0
 Aysén,11.0,Chile Chico,11401.0,5121.0,SE14,1.0
 Aysén,11.0,Cisnes,11202.0,5828.0,SE14,0.0
@@ -3397,7 +3397,7 @@ Metropolitana,13.0,Santiago,13101.0,503147.0,SE16,173.0
 Metropolitana,13.0,Talagante,13601.0,81838.0,SE16,10.0
 Metropolitana,13.0,Tiltil,13303.0,21477.0,SE16,6.0
 Metropolitana,13.0,Vitacura,13132.0,96774.0,SE16,5.0
-Metropolitana,13.0,Desconocido Metropolitana,,,SE16,0.0
+Metropolitana,13.0,Desconocido Metropolitana,,,SE16,1.0
 O’Higgins,6.0,Chepica,6302.0,15925.0,SE16,0.0
 O’Higgins,6.0,Chimbarongo,6303.0,37696.0,SE16,0.0
 O’Higgins,6.0,Codegua,6102.0,14096.0,SE16,0.0
@@ -3759,7 +3759,7 @@ Metropolitana,13.0,Santiago,13101.0,503147.0,SE17,383.0
 Metropolitana,13.0,Talagante,13601.0,81838.0,SE17,10.0
 Metropolitana,13.0,Tiltil,13303.0,21477.0,SE17,5.0
 Metropolitana,13.0,Vitacura,13132.0,96774.0,SE17,13.0
-Metropolitana,13.0,Desconocido Metropolitana,,,SE17,0.0
+Metropolitana,13.0,Desconocido Metropolitana,,,SE17,1.0
 O’Higgins,6.0,Chepica,6302.0,15925.0,SE17,0.0
 O’Higgins,6.0,Chimbarongo,6303.0,37696.0,SE17,0.0
 O’Higgins,6.0,Codegua,6102.0,14096.0,SE17,0.0
@@ -4121,7 +4121,7 @@ Metropolitana,13.0,Santiago,13101.0,503147.0,SE18,940.0
 Metropolitana,13.0,Talagante,13601.0,81838.0,SE18,42.0
 Metropolitana,13.0,Tiltil,13303.0,21477.0,SE18,10.0
 Metropolitana,13.0,Vitacura,13132.0,96774.0,SE18,56.0
-Metropolitana,13.0,Desconocido Metropolitana,,,SE18,0.0
+Metropolitana,13.0,Desconocido Metropolitana,,,SE18,1.0
 O’Higgins,6.0,Chepica,6302.0,15925.0,SE18,0.0
 O’Higgins,6.0,Chimbarongo,6303.0,37696.0,SE18,1.0
 O’Higgins,6.0,Codegua,6102.0,14096.0,SE18,0.0
@@ -4483,7 +4483,7 @@ Metropolitana,13.0,Santiago,13101.0,503147.0,SE19,1658.0
 Metropolitana,13.0,Talagante,13601.0,81838.0,SE19,58.0
 Metropolitana,13.0,Tiltil,13303.0,21477.0,SE19,32.0
 Metropolitana,13.0,Vitacura,13132.0,96774.0,SE19,153.0
-Metropolitana,13.0,Desconocido Metropolitana,,,SE19,0.0
+Metropolitana,13.0,Desconocido Metropolitana,,,SE19,2.0
 O’Higgins,6.0,Chepica,6302.0,15925.0,SE19,1.0
 O’Higgins,6.0,Chimbarongo,6303.0,37696.0,SE19,5.0
 O’Higgins,6.0,Codegua,6102.0,14096.0,SE19,1.0
@@ -4845,7 +4845,7 @@ Metropolitana,13.0,Santiago,13101.0,503147.0,SE20,1650.0
 Metropolitana,13.0,Talagante,13601.0,81838.0,SE20,92.0
 Metropolitana,13.0,Tiltil,13303.0,21477.0,SE20,39.0
 Metropolitana,13.0,Vitacura,13132.0,96774.0,SE20,207.0
-Metropolitana,13.0,Desconocido Metropolitana,,,SE20,0.0
+Metropolitana,13.0,Desconocido Metropolitana,,,SE20,1.0
 O’Higgins,6.0,Chepica,6302.0,15925.0,SE20,7.0
 O’Higgins,6.0,Chimbarongo,6303.0,37696.0,SE20,13.0
 O’Higgins,6.0,Codegua,6102.0,14096.0,SE20,3.0
@@ -5207,7 +5207,7 @@ Metropolitana,13.0,Santiago,13101.0,503147.0,SE21,1780.0
 Metropolitana,13.0,Talagante,13601.0,81838.0,SE21,118.0
 Metropolitana,13.0,Tiltil,13303.0,21477.0,SE21,55.0
 Metropolitana,13.0,Vitacura,13132.0,96774.0,SE21,169.0
-Metropolitana,13.0,Desconocido Metropolitana,,,SE21,0.0
+Metropolitana,13.0,Desconocido Metropolitana,,,SE21,2.0
 O’Higgins,6.0,Chepica,6302.0,15925.0,SE21,0.0
 O’Higgins,6.0,Chimbarongo,6303.0,37696.0,SE21,8.0
 O’Higgins,6.0,Codegua,6102.0,14096.0,SE21,7.0
@@ -5516,7 +5516,7 @@ Valparaíso,5.0,Valparaiso,5101.0,315732.0,SE22,279.0
 Valparaíso,5.0,Villa Alemana,5804.0,139310.0,SE22,100.0
 Valparaíso,5.0,Vina del Mar,5109.0,361371.0,SE22,260.0
 Valparaíso,5.0,Zapallar,5405.0,7994.0,SE22,1.0
-Valparaíso,5.0,Desconocido Valparaiso,,,SE22,0.0
+Valparaíso,5.0,Desconocido Valparaiso,,,SE22,1.0
 Metropolitana,13.0,Alhue,13502.0,7405.0,SE22,8.0
 Metropolitana,13.0,Buin,13402.0,109641.0,SE22,186.0
 Metropolitana,13.0,Calera de Tango,13403.0,28525.0,SE22,55.0
@@ -5569,7 +5569,7 @@ Metropolitana,13.0,Santiago,13101.0,503147.0,SE22,1442.0
 Metropolitana,13.0,Talagante,13601.0,81838.0,SE22,145.0
 Metropolitana,13.0,Tiltil,13303.0,21477.0,SE22,50.0
 Metropolitana,13.0,Vitacura,13132.0,96774.0,SE22,129.0
-Metropolitana,13.0,Desconocido Metropolitana,,,SE22,0.0
+Metropolitana,13.0,Desconocido Metropolitana,,,SE22,4.0
 O’Higgins,6.0,Chepica,6302.0,15925.0,SE22,4.0
 O’Higgins,6.0,Chimbarongo,6303.0,37696.0,SE22,6.0
 O’Higgins,6.0,Codegua,6102.0,14096.0,SE22,10.0
@@ -5931,7 +5931,7 @@ Metropolitana,13.0,Santiago,13101.0,503147.0,SE23,1186.0
 Metropolitana,13.0,Talagante,13601.0,81838.0,SE23,168.0
 Metropolitana,13.0,Tiltil,13303.0,21477.0,SE23,54.0
 Metropolitana,13.0,Vitacura,13132.0,96774.0,SE23,117.0
-Metropolitana,13.0,Desconocido Metropolitana,,,SE23,0.0
+Metropolitana,13.0,Desconocido Metropolitana,,,SE23,2.0
 O’Higgins,6.0,Chepica,6302.0,15925.0,SE23,6.0
 O’Higgins,6.0,Chimbarongo,6303.0,37696.0,SE23,11.0
 O’Higgins,6.0,Codegua,6102.0,14096.0,SE23,9.0
@@ -6655,7 +6655,7 @@ Metropolitana,13.0,Santiago,13101.0,503147.0,SE25,638.0
 Metropolitana,13.0,Talagante,13601.0,81838.0,SE25,136.0
 Metropolitana,13.0,Tiltil,13303.0,21477.0,SE25,29.0
 Metropolitana,13.0,Vitacura,13132.0,96774.0,SE25,64.0
-Metropolitana,13.0,Desconocido Metropolitana,,,SE25,0.0
+Metropolitana,13.0,Desconocido Metropolitana,,,SE25,1.0
 O’Higgins,6.0,Chepica,6302.0,15925.0,SE25,11.0
 O’Higgins,6.0,Chimbarongo,6303.0,37696.0,SE25,11.0
 O’Higgins,6.0,Codegua,6102.0,14096.0,SE25,15.0
@@ -7017,7 +7017,7 @@ Metropolitana,13.0,Santiago,13101.0,503147.0,SE26,73.0
 Metropolitana,13.0,Talagante,13601.0,81838.0,SE26,18.0
 Metropolitana,13.0,Tiltil,13303.0,21477.0,SE26,5.0
 Metropolitana,13.0,Vitacura,13132.0,96774.0,SE26,11.0
-Metropolitana,13.0,Desconocido Metropolitana,,,SE26,0.0
+Metropolitana,13.0,Desconocido Metropolitana,,,SE26,1.0
 O’Higgins,6.0,Chepica,6302.0,15925.0,SE26,0.0
 O’Higgins,6.0,Chimbarongo,6303.0,37696.0,SE26,4.0
 O’Higgins,6.0,Codegua,6102.0,14096.0,SE26,3.0
