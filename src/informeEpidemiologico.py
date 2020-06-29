@@ -466,6 +466,6 @@ if __name__ == '__main__':
     prod39('../input/InformeEpidemiologico/NotificacionInicioSintomas.csv', '../output/producto39/NotificacionInicioSintomas')
 
     print('Generando producto 45')
-    prod45('../input/InformeEpidemiologico/2020-06-26-Casos', 'Confirmados','../output/producto45/CasosConfirmadosPorComuna')
-    prod45('../input/InformeEpidemiologico/2020-06-26-Casos', 'NoNotificados','../output/producto45/CasosNoNotificadosPorComuna')
-    prod45('../input/InformeEpidemiologico/2020-06-26-Casos', 'Probables','../output/producto45/CasosProbablesPorComuna')
+    prod45('../input/InformeEpidemiologico/2020-06-28-Casos', 'Confirmados','../output/producto45/CasosConfirmadosPorComuna')
+    prod45('../input/InformeEpidemiologico/2020-06-28-Casos', 'NoNotificados','../output/producto45/CasosNoNotificadosPorComuna')
+    prod45('../input/InformeEpidemiologico/2020-06-28-Casos', 'Probables','../output/producto45/CasosProbablesPorComuna')
